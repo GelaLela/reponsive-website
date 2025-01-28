@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RESPONSIVE WEBSITE </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #d7d7d7;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: url(sasakoi.jpg);
+            background-position: 50% 25%;
+            background-size: 2050px 2050px;
+            background-repeat: no-repeat;
+
+            color: #000000;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #000000;
+            text-shadow: 1px 1px #a4a4a4
+
+        }
+        span {
+            background-color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 10px; 
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: #000000;
+            border-radius: 4px;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .content {
+            width: 70%;
+            background-color: #ffffff;
+            border: 2px solid #030303;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            color: #000000;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .content div {
+            margin-top: 15px;
+            background-image: url(akishihopng.png);
+            background-position: 50% 50%;
+            background-size: 980px 825px;
+            background-repeat: no-repeat;
+            /* background-color: #d4d4d4; */
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px double #000000;
+        }
+
+        /* .content div::before {
+            content: "Placeholder";
+            color: #000000;
+            font-size: 1.2rem;
+        } */
+        
+
+
+        .content1 {
+            width: 25%;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .content1 h2 {
+            color: #000000;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .content1 p {
+            margin-bottom: 15px;
+        }
+
+        .content1 div {
+            margin-top: 15px;
+            background-image: url(eku.png);
+            background-position: 50% 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px double #000000;
+        }
+
+
+        @media (max-width: 726px) {
+            header {
+                padding: 30px 10px;
+                background-position: 50% 25%;
+                background-size: 1500px 1500px;
+            }
+            .container {
+                flex-direction: column;
+            }
+
+            .content {
+                width: 100%;
+                margin-bottom: 20px;
+                background-position: 20% 20%;
+                background-size: 820px 820px;
+            }
+            .content1 {
+                background-size: contain;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            header {
+                font-size: 1.2rem;
+                background-position: 50% 25%;
+                background-size: 1000px 1000px;
+            }
+
+            nav {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>SASAKOI</span></h1>
+        <p><span>You ni Koi wo Utau a Japanese yuri manga written and illustrated by Eku Takeshima.</span></p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Author</a>
+        <a href="#">Update</a>
+    </nav>
+
+    <div class="container">
+        <div class="content1">
+            <h2>About The Author</h2>
+            <p>Eku Takeshima is the manga artist. It is known for creating the manga series Whisper Me a Love Song and lives in Okayama Prefecture, Japan.</p>
+            <div></div>
+        </div>
+
+        <div class="content">
+            <h2>Latest Update</h2>
+            <p>Yurihime March issue release date. Episode 54 of "Sasakoi" is also included. What will become of Yohima, who was arrested on suspicion of being a spy on Aki Shiho's date?</p>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
